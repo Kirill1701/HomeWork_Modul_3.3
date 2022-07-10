@@ -13,10 +13,12 @@ namespace HomeWork_Modul_3._3
 
             while (i < n) 
             {
-                if (n % i == 0) prime = false;
+                if (n % i == 0) 
                 {
-                    i++;
+                    prime = false;
+                    break;
                 }
+                i++;
             }
 
             if (prime == true)
