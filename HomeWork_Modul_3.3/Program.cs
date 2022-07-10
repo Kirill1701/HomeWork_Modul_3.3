@@ -9,19 +9,20 @@ namespace HomeWork_Modul_3._3
             Console.WriteLine("Введите целое число\n");
             int n = int.Parse(Console.ReadLine());
             bool number = false;
+            int i = 2;
 
-            while (n >= 1)
+            while (i < n)
             {
-                if (n % 2 == 0)
+                if (n % i == 0)
                 {
                     Console.Write(true);
-
+                    i++;
                 }
                 else
                 {
                     Console.Write(number);
+                    i++;
                 }
-                break;
             }
 
             Console.ReadKey();
