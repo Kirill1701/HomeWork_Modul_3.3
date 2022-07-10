@@ -8,21 +8,24 @@ namespace HomeWork_Modul_3._3
         {
             Console.WriteLine("Введите целое число\n");
             int n = int.Parse(Console.ReadLine());
-            bool number = false;
+            bool prime = true;
             int i = 2;
 
-            while (i < n)
+            while (i < n) 
             {
-                if (n % i == 0)
+                if (n % i == 0) prime = false;
                 {
-                    Console.Write(true);
                     i++;
                 }
-                else
-                {
-                    Console.Write(number);
-                    i++;
-                }
+            }
+
+            if (prime == true)
+            {
+                Console.WriteLine("Число простое");
+            }
+            else
+            {
+                Console.WriteLine("Число не является простым");
             }
 
             Console.ReadKey();
